@@ -1,0 +1,410 @@
+Version 2
+{
+"classname" "worldspawn"
+{
+brushDef3
+{
+( 1 0 0 692.7769 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( -1 0 0 -724.7769 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 1 0 -542.7266 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 -1 0 -789.0968 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 1 -343.9070 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 -1 -651.2051 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+}
+}
+{
+brushDef3
+{
+( 1 0 0 -607.0465 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( -1 0 0 575.0465 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 1 0 -542.7266 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 -1 0 -789.0968 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 1 -343.9070 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 -1 -651.2051 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+}
+}
+{
+brushDef3
+{
+( 1 0 0 -575.0465 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( -1 0 0 -692.7769 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 1 0 757.0968 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 -1 0 -789.0968 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 1 -343.9070 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 -1 -651.2051 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+}
+}
+{
+brushDef3
+{
+( 1 0 0 -575.0465 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( -1 0 0 -692.7769 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 1 0 -542.7266 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 -1 0 510.7266 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 1 -343.9070 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 -1 -651.2051 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+}
+}
+{
+brushDef3
+{
+( 1 0 0 -575.0465 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( -1 0 0 -692.7769 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 1 0 -510.7266 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 -1 0 -757.0968 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 1 619.2051 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 -1 -651.2051 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+}
+}
+{
+brushDef3
+{
+( 1 0 0 -575.0465 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( -1 0 0 -692.7769 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 1 0 -510.7266 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 -1 0 -757.0968 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 1 -343.9070 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+( 0 0 -1 311.9070 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/caulk" 0 0 0
+}
+}
+}
+{
+"classname" "info_player_start"
+"name" "spawn"
+"origin" "-57.8549 -160.4080 -57.3681"
+"angle" "89.85"
+}
+{
+"classname" "func_static"
+"name" "sky"
+"model" "models/sanctuary/sky.ase"
+"origin" "0 0 0"
+"noshadows" "1"
+}
+{
+"classname" "func_static"
+"name" "sanctuary"
+"model" "models/sanctuary/sanctuary.ase"
+"origin" "0 0 0"
+"noshadows" "0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_0"
+"anim" "path"
+"anim path" "models/sanctuary/camera_0"
+"origin" "0 0 0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_1"
+"anim" "path"
+"anim path" "models/sanctuary/camera_1"
+"origin" "0 0 0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_2"
+"anim" "path"
+"anim path" "models/sanctuary/camera_2"
+"origin" "0 0 0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_3"
+"anim" "path"
+"anim path" "models/sanctuary/camera_3"
+"origin" "0 0 0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_4"
+"anim" "path"
+"anim path" "models/sanctuary/camera_4"
+"origin" "0 0 0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_5"
+"anim" "path"
+"anim path" "models/sanctuary/camera_5"
+"origin" "0 0 0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_6"
+"anim" "path"
+"anim path" "models/sanctuary/camera_6"
+"origin" "0 0 0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_7"
+"anim" "path"
+"anim path" "models/sanctuary/camera_7"
+"origin" "0 0 0"
+}
+{
+"classname" "sanctuary_camera"
+"name" "cam_8"
+"anim" "path"
+"anim path" "models/sanctuary/camera_8"
+"origin" "0 0 0"
+}
+{
+"classname" "light"
+"name" "light_sun"
+"origin" "29.7966 -1743.9693 663.4329"
+"light_target" "-85.2862 1674.6824 -654.3433"
+"light_right" "538.0590 -446.5101 -1212.8979"
+"light_up" "-1290.7720 -253.0659 -479.4426"
+"_color" "1 0.658824 0.498039"
+"light" "1.1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "light_flame_0"
+"origin" "-12.6970 -27.6160 32.0000"
+"_color" "0.643133 0.43529 0.203922"
+"light" "0.65"
+"light_radius" "90.0000 90.0000 90.0000"
+}
+{
+"classname" "func_emitter"
+"name" "particles_flame_0"
+"model" "sanctuary_flame.prt"
+"origin" "2.4800 -26.0000 22.5000"
+}
+{
+"classname" "func_emitter"
+"name" "particles_smoke_0"
+"model" "sanctuary_smoke.prt"
+"origin" "2.4800 -26.0000 32.5000"
+}
+{
+"classname" "light"
+"name" "light_flame_1"
+"origin" "-97.9700 -129.0850 32.0000"
+"_color" "0.748983 0.50931 0.239672"
+"light" "0.65"
+"light_radius" "90.0000 90.0000 90.0000"
+}
+{
+"classname" "func_emitter"
+"name" "particles_flame_1"
+"model" "sanctuary_flame.prt"
+"origin" "-113.6640 -130.0000 22.5000"
+}
+{
+"classname" "func_emitter"
+"name" "particles_smoke_1"
+"model" "sanctuary_smoke.prt"
+"origin" "-113.6640 -130.0000 32.5000"
+}
+{
+"classname" "light"
+"name" "light_candle_0"
+"origin" "-35.4110 -20.7720 -2.0830"
+"_color" "0.607843 0.411765 0.180392"
+"light" "0.75"
+"light_target" "0.0000 -0.0000 -28.0000"
+"light_right" "0.0000 -16.1658 0.0000"
+"light_up" "-16.1658 -0.0000 0.0000"
+}
+{
+"classname" "func_emitter"
+"name" "particles_candle_0"
+"model" "sanctuary_candle.prt"
+"origin" "-35.2780 -20.7000 -13.2170"
+}
+{
+"classname" "light"
+"name" "light_candle_1"
+"origin" "-75.9600 -20.9730 -1.9820"
+"_color" "0.686145 0.466738 0.207439"
+"light" "0.75"
+"light_target" "0.0000 -0.0000 -28.0000"
+"light_right" "0.0000 -16.1658 0.0000"
+"light_up" "-16.1658 -0.0000 0.0000"
+}
+{
+"classname" "func_emitter"
+"name" "particles_candle_1"
+"model" "sanctuary_candle.prt"
+"origin" "-76.2620 -20.9000 -13.2170"
+}
+{
+"classname" "func_emitter"
+"name" "floor_particles"
+"model" "sanctuary_dust.prt"
+"origin" "-55.1760 -86.9540 -58.1559"
+}
+{
+"classname" "light"
+"name" "light_fireball_0"
+"origin" "-0.0000 -0.0000 -1000.0000"
+"_color" "0.643137 0.435294 0.203922"
+"light" "0.75"
+"light_radius" "119.7800 119.7800 119.7800"
+"hide" "1"
+}
+{
+"classname" "light"
+"name" "light_fireball_1"
+"origin" "-0.0000 -0.0000 -1000.0000"
+"_color" "0.643137 0.435294 0.203922"
+"light" "0.65"
+"light_radius" "90.0000 90.0000 90.0000"
+"hide" "1"
+}
+{
+"classname" "light"
+"name" "windows_light_1"
+"origin" "-137.5220 -156.1370 17.1040"
+"_color" "1 0.742659 0.321569"
+"light" "0.40"
+"light_target" "0.0000 -0.0000 -45.0000"
+"light_right" "0.0000 -18.6396 0.0000"
+"light_up" "-18.6396 -0.0000 0.0000"
+"hide" "1"
+"nodiffuse" "1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "windows_light_2"
+"origin" "-137.5220 -104.0550 17.1044"
+"_color" "1 0.741165 0.321569"
+"light" "0.40"
+"light_target" "0.0000 -0.0000 -45.0000"
+"light_right" "0.0000 -18.6396 0.0000"
+"light_up" "-18.6396 -0.0000 0.0000"
+"hide" "1"
+"nodiffuse" "1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "windows_light_3"
+"origin" "-137.5220 -52.3522 17.1044"
+"_color" "1 0.741165 0.321569"
+"light" "0.40"
+"light_target" "0.0000 -0.0000 -45.0000"
+"light_right" "0.0000 -18.6396 0.0000"
+"light_up" "-18.6396 -0.0000 0.0000"
+"hide" "1"
+"nodiffuse" "1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "windows_light_4"
+"origin" "-137.5220 0.5099 17.1044"
+"_color" "1 0.741165 0.321569"
+"light" "0.40"
+"light_target" "0.0000 -0.0000 -45.0000"
+"light_right" "0.0000 -18.6396 0.0000"
+"light_up" "-18.6396 -0.0000 0.0000"
+"hide" "1"
+"nodiffuse" "1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "windows_light_5"
+"origin" "25.9328 -157.1210 17.1044"
+"_color" "1 0.741165 0.321569"
+"light" "0.40"
+"light_target" "0.0000 -0.0000 -45.0000"
+"light_right" "0.0000 -18.6396 0.0000"
+"light_up" "-18.6396 -0.0000 0.0000"
+"hide" "1"
+"nodiffuse" "1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "windows_light_6"
+"origin" "25.9328 -104.3300 17.1044"
+"_color" "1 0.741165 0.321569"
+"light" "0.40"
+"light_target" "0.0000 -0.0000 -45.0000"
+"light_right" "0.0000 -18.6396 0.0000"
+"light_up" "-18.6396 -0.0000 0.0000"
+"hide" "1"
+"nodiffuse" "1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "windows_light_7"
+"origin" "25.9328 -51.8371 17.1044"
+"_color" "1 0.741165 0.321569"
+"light" "0.40"
+"light_target" "0.0000 -0.0000 -45.0000"
+"light_right" "0.0000 -18.6396 0.0000"
+"light_up" "-18.6396 -0.0000 0.0000"
+"hide" "1"
+"nodiffuse" "1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "windows_light_8"
+"origin" "25.9328 -0.3873 17.1044"
+"_color" "1 0.741165 0.321569"
+"light" "0.40"
+"light_target" "0.0000 -0.0000 -45.0000"
+"light_right" "0.0000 -18.6396 0.0000"
+"light_up" "-18.6396 -0.0000 0.0000"
+"hide" "1"
+"nodiffuse" "1"
+"noshadows" "1"
+}
+{
+"classname" "light"
+"name" "light_weapon"
+"origin" "-0.2004 0.0773 9.4362"
+"_color" "0.929412 0.666667 0.439216"
+"light" "0.50"
+"light_radius" "70.0000 70.0000 70.0000"
+"hide" "1"
+}
+{
+"classname" "speaker"
+"name" "sanctuary_music"
+"origin" "-55.4896 -69.2869 9.0896"
+"s_shader" "sanctuary_music"
+"s_looping" "1"
+"s_global" "1"
+"s_omni" "1"
+"s_volume" "-2"
+}
+{
+"classname" "func_static"
+"name" "sanctuary_menu"
+"model" "models/sanctuary/menu.ase"
+"gui" "guis/sanctuary/menu.gui"
+"origin" "-93.8549 -160.4080 10.6319"
+"angle" "180"
+"solid" "1"
+"mins" "-2 -24 -18"
+"maxs" "2 24 18"
+"noshadows" "1"
+"gui_noninteractive" "0"
+}
+{
+"classname" "func_emitter"
+"name" "particles_fireball_0"
+"model" "sanctuary_flame.prt"
+"origin" "0 0 -1000"
+"hide" "1"
+}
+{
+"classname" "func_emitter"
+"name" "particles_fireball_1"
+"model" "sanctuary_flame.prt"
+"origin" "0 0 -1000"
+"hide" "1"
+}

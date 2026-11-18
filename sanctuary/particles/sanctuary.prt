@@ -1,0 +1,81 @@
+particle sanctuary_flame.prt {
+{
+material textures/sanctuary/fire_flame
+count 12
+time 0.7
+cycles 0
+bunching 0.4
+distribution rect 0.6 0.6 0.8
+direction cone 12
+orientation view
+speed "1" to "3"
+size "1.2" to "2.6"
+aspect 1
+fadeIn 0.05
+fadeOut 0.35
+color 1 0.62 0.22 1
+fadeColor 0.4 0.05 0 0
+gravity -8
+offset 0 0 1
+}
+}
+particle sanctuary_candle.prt {
+{
+material textures/sanctuary/fire_flame
+count 6
+time 0.45
+cycles 0
+bunching 0.3
+distribution rect 0.15 0.15 0.3
+direction cone 8
+orientation view
+speed "0.2" to "0.8"
+size "0.35" to "0.8"
+aspect 1
+fadeIn 0.05
+fadeOut 0.4
+color 1 0.72 0.28 1
+fadeColor 0.5 0.08 0 0
+gravity -3
+offset 0 0 0.4
+}
+}
+particle sanctuary_smoke.prt {
+{
+material textures/sanctuary/fire_smoke
+count 18
+time 2.6
+cycles 0
+bunching 0.6
+distribution sphere 2
+direction cone 25
+orientation view
+speed "2" to "6"
+size "8" to "18"
+aspect 1
+fadeIn 0.15
+fadeOut 0.4
+color 0.35 0.32 0.28 0.35
+fadeColor 0.15 0.14 0.12 0
+gravity -8
+offset 0 0 6
+}
+}
+particle sanctuary_dust.prt {
+{
+material textures/sanctuary/fire_smoke
+count 40
+time 6
+cycles 0
+distribution rect 40 16 4
+direction cone 70
+orientation view
+speed "0.5" to "2"
+size "1.5" to "3"
+fadeIn 0.2
+fadeOut 0.3
+color 0.45 0.38 0.28 0.18
+fadeColor 0.2 0.16 0.1 0
+gravity -1
+}
+}

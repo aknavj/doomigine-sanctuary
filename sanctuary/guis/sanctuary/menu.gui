@@ -1,0 +1,550 @@
+windowDef Desktop
+{
+	rect	0,0,640,480
+	backcolor	0.04,0.03,0.025,1
+	onTime 0
+	{
+		set "sun_label" "Sun: on" ;
+		set "flame_label" "Flames: on" ;
+		set "candle_label" "Candles: on" ;
+		set "weapon_label" "Weapon: off" ;
+		set "sound_label" "Sound: on" ;
+		set "fireball_label" "Fireballs: off" ;
+		set "tone_label" "Tone: default" ;
+		set "bench_label" "Choose Benchmark or a camera" ;
+		set "bench_fps" "--" ;
+		set "bench_seconds" "--" ;
+	}
+	windowDef settings_b
+	{
+		rect	8,8,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Settings"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		set "settings_panel::visible" "0" ;
+		set "stereo_panel::visible" "0" ;
+		set "post_panel::visible" "0" ;
+		set "camera_panel::visible" "0" ;
+		set "info_panel::visible" "0" ;
+		set "settings_panel::visible" "1" ;
+		}
+	}
+	windowDef stereo_b
+	{
+		rect	132,8,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Stereo"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		set "settings_panel::visible" "0" ;
+		set "stereo_panel::visible" "0" ;
+		set "post_panel::visible" "0" ;
+		set "camera_panel::visible" "0" ;
+		set "info_panel::visible" "0" ;
+		set "stereo_panel::visible" "1" ;
+		}
+	}
+	windowDef post_b
+	{
+		rect	256,8,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Postprocess"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		set "settings_panel::visible" "0" ;
+		set "stereo_panel::visible" "0" ;
+		set "post_panel::visible" "0" ;
+		set "camera_panel::visible" "0" ;
+		set "info_panel::visible" "0" ;
+		set "post_panel::visible" "1" ;
+		}
+	}
+	windowDef camera_b
+	{
+		rect	380,8,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Camera"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		set "settings_panel::visible" "0" ;
+		set "stereo_panel::visible" "0" ;
+		set "post_panel::visible" "0" ;
+		set "camera_panel::visible" "0" ;
+		set "info_panel::visible" "0" ;
+		set "camera_panel::visible" "1" ;
+		}
+	}
+	windowDef fireballs_b
+	{
+		rect	504,8,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Fireballs"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		runScript sanctuary_fireballs ;
+		}
+	}
+	windowDef sound_b
+	{
+		rect	8,38,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Sound"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		runScript sanctuary_sound ;
+		}
+	}
+	windowDef benchmark_b
+	{
+		rect	132,38,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Benchmark"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		runScript sanctuary_benchmark ;
+		}
+	}
+	windowDef editor_b
+	{
+		rect	256,38,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Editor"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		set "settings_panel::visible" "0" ;
+		set "stereo_panel::visible" "0" ;
+		set "post_panel::visible" "0" ;
+		set "camera_panel::visible" "0" ;
+		set "info_panel::visible" "0" ;
+		set "info_panel::visible" "1" ;
+		}
+	}
+	windowDef quit_b
+	{
+		rect	380,38,118,24
+		backcolor	0.16,0.11,0.07,1
+		bordercolor	0.72,0.55,0.32,0.9
+		bordersize	1
+		forecolor	0.95,0.86,0.68,1
+		text	"Quit"
+		textscale	0.22
+		textalign	1
+		onAction
+		{
+		set "settings_panel::visible" "0" ;
+		set "stereo_panel::visible" "0" ;
+		set "post_panel::visible" "0" ;
+		set "camera_panel::visible" "0" ;
+		set "info_panel::visible" "0" ;
+		set "info_panel::visible" "1" ;
+		runScript sanctuary_quit ;
+		}
+	}
+	windowDef settings_panel
+	{
+		rect	16,78,608,360
+		backcolor	0.07,0.05,0.04,0.96
+		bordercolor	0.72,0.55,0.32,0.7
+		bordersize	1
+		visible	1
+		windowDef settings_panel_title
+		{
+			rect	12,8,400,22
+			forecolor	0.95,0.86,0.68,1
+			text	"Scene"
+			textscale	0.28
+		}
+	windowDef sun_b
+		{
+			rect	16,40,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"gui::sun_label"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_sun ;
+			}
+		}
+	windowDef flame_b
+		{
+			rect	308,40,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"gui::flame_label"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_flames ;
+			}
+		}
+	windowDef candle_b
+		{
+			rect	16,76,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"gui::candle_label"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_candles ;
+			}
+		}
+	windowDef weapon_b
+		{
+			rect	308,76,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"gui::weapon_label"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_weapon ;
+			}
+		}
+	}
+	windowDef post_panel
+	{
+		rect	16,78,608,360
+		backcolor	0.07,0.05,0.04,0.96
+		bordercolor	0.72,0.55,0.32,0.7
+		bordersize	1
+		visible	0
+		windowDef post_panel_title
+		{
+			rect	12,8,400,22
+			forecolor	0.95,0.86,0.68,1
+			text	"Postprocess"
+			textscale	0.28
+		}
+	windowDef tone_default_b
+		{
+			rect	16,40,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Default"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_tone_default ;
+			}
+		}
+	windowDef tone_bright_b
+		{
+			rect	308,40,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Bright"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_tone_bright ;
+			}
+		}
+	windowDef tone_dim_b
+		{
+			rect	16,76,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Dim"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_tone_dim ;
+			}
+		}
+	windowDef tone_warm_b
+		{
+			rect	308,76,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Warm gamma"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_tone_warm ;
+			}
+		}
+	windowDef tone_cool_b
+		{
+			rect	16,112,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Cool gamma"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_tone_cool ;
+			}
+		}
+	}
+	windowDef camera_panel
+	{
+		rect	16,78,608,360
+		backcolor	0.07,0.05,0.04,0.96
+		bordercolor	0.72,0.55,0.32,0.7
+		bordersize	1
+		visible	0
+		windowDef camera_panel_title
+		{
+			rect	12,8,400,22
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera paths"
+			textscale	0.28
+		}
+	windowDef cam_b_0
+		{
+			rect	16,40,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 0"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_0 ;
+			}
+		}
+	windowDef cam_b_1
+		{
+			rect	308,40,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 1"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_1 ;
+			}
+		}
+	windowDef cam_b_2
+		{
+			rect	16,76,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 2"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_2 ;
+			}
+		}
+	windowDef cam_b_3
+		{
+			rect	308,76,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 3"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_3 ;
+			}
+		}
+	windowDef cam_b_4
+		{
+			rect	16,112,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 4"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_4 ;
+			}
+		}
+	windowDef cam_b_5
+		{
+			rect	308,112,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 5"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_5 ;
+			}
+		}
+	windowDef cam_b_6
+		{
+			rect	16,148,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 6"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_6 ;
+			}
+		}
+	windowDef cam_b_7
+		{
+			rect	308,148,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 7"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_7 ;
+			}
+		}
+	windowDef cam_b_8
+		{
+			rect	16,184,276,28
+			backcolor	0.16,0.11,0.07,1
+			bordercolor	0.72,0.55,0.32,0.9
+			bordersize	1
+			forecolor	0.95,0.86,0.68,1
+			text	"Camera 8"
+			textscale	0.22
+			textalign	1
+			onAction
+			{
+			runScript sanctuary_cam_8 ;
+			}
+		}
+	}
+	windowDef stereo_panel
+	{
+		rect	16,78,608,120
+		backcolor	0.07,0.05,0.04,0.96
+		bordercolor	0.72,0.55,0.32,0.7
+		bordersize	1
+		visible	0
+		windowDef stereo_text
+		{
+			rect	12,16,580,80
+			forecolor	0.95,0.86,0.68,1
+			text	"Stereo, anaglyph and the editor are Unigine-only. This port keeps the benchmark, cameras, lights and sound."
+			textscale	0.24
+		}
+	}
+	windowDef info_panel
+	{
+		rect	16,78,608,80
+		backcolor	0.07,0.05,0.04,0.96
+		visible	0
+		windowDef info_text
+		{
+			rect	12,12,580,52
+			forecolor	0.95,0.86,0.68,1
+			text	"Escape, then Exit Game, leaves Doom 3. Quit on this panel only explains that."
+			textscale	0.24
+		}
+	}
+	windowDef status_label
+	{
+		rect	16,444,360,20
+		forecolor	0.95,0.86,0.68,1
+		text	"gui::bench_label"
+		textscale	0.22
+	}
+	windowDef fps_label
+	{
+		rect	390,444,110,20
+		forecolor	0.95,0.86,0.68,1
+		text	"gui::bench_fps"
+		textscale	0.22
+		textalign	2
+	}
+	windowDef seconds_label
+	{
+		rect	510,444,110,20
+		forecolor	0.95,0.86,0.68,1
+		text	"gui::bench_seconds"
+		textscale	0.22
+		textalign	2
+	}
+}

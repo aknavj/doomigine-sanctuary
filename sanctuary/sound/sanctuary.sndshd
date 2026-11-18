@@ -1,0 +1,6 @@
+sanctuary_music {
+	minDistance 20
+	maxDistance 2000
+	no_dups
+	sound/sanctuary/sanctuary.ogg
+}

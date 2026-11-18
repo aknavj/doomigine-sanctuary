@@ -1,0 +1,12 @@
+Sanctuary data subset loaded by id Tech 4.
+Included: meshes, diffuse/normal/spec, vertex-color ambient from uv1,
+sun as a projected light, omni/projected lights, particles, music,
+nine md5camera paths with the demo's 20-frame clamp and a short fade.
+Window lights and editor-hidden lights are present but hidden.
+Flame and candle lights are forced on so the hall is not black.
+Needs the dhewm3-cupt ASE loader fix: stock Doom 3 parses *MESH_VERTCOL as zero, which blacks out vertexColor.
+Not included: parallax, glow, HDR, DOF, stereo, LUTs, cubemap reflections,
+transmission, and a real directional sun. The path tracer was not modified.
+meshes 2
+materials 40
+textures 107

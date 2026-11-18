@@ -1,0 +1,900 @@
+// Sanctuary materials. Baked ambient is additive so dynamic lights stay visible.
+
+sanctuary/altar_marble
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/altar_marble_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/altar_marble_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/altar_marble_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/altar_marble_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/altar_relief_1
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/altar_relief1_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/altar_relief1_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/altar_relief1_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/altar_relief1_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/altar_relief_2
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/altar_relief2_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/altar_relief2_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/altar_marble_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/altar_relief2_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/arch_aisle
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/arch_aisle_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/arch_aisle_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/arch_aisle_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/arch_aisle_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/arch_aisle_relief_1
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/arch_aisle_relief1_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/arch_aisle_relief1_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/arch_aisle_relief1_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/arch_aisle_relief1_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/arch_aisle_relief_2
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/arch_aisle_relief2_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/arch_aisle_relief2_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/arch_aisle_relief2_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/arch_aisle_relief2_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/arch_aisle_relief_3
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/arch_aisle_relief3_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/arch_aisle_relief3_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/arch_aisle_relief3_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/arch_aisle_relief3_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/arch_fillet
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/arch_fillet_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/arch_fillet_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/arch_fillet_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/arch_fillet_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/arch_frame
+{
+	twoSided
+	{
+		blend bumpmap
+		map textures/sanctuary/arch_frame_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/arch_frame_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/arch_frame_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/arch_frame_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/arch_side
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/arch_side_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/arch_side_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/arch_side_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/arch_side_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/bible
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/bible_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/bible_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/bible_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/bible_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/candle
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/candlestick_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/candlestick_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/candlestick_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/candlestick_e.tga
+		rgb 1.5
+	}
+	{
+		blend add
+		map textures/sanctuary/candlestick_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/candlestick
+{
+	twoSided
+	{
+		blend bumpmap
+		map textures/sanctuary/candlestick_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/candlestick_d.tga
+		alphaTest 0.5
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/candlestick_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/candlestick_e.tga
+		rgb 1.5
+	}
+}
+
+sanctuary/ceiling
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/ceiling_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/ceiling_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/ceiling_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/ceiling_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/ceiling_windows_glass
+{
+	noshadows
+	translucent
+	{
+		blend add
+		map textures/sanctuary/ceiling_windows_d_glass.tga
+		alphaTest 0.5
+		rgb 0.7
+	}
+}
+
+sanctuary/ceiling_windows_wall
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/ceiling_windows_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/ceiling_windows_d.tga
+		alphaTest 0.5
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/ceiling_windows_s.tga
+		rgb 1.75
+	}
+}
+
+sanctuary/column
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/column_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/column_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/column_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/column_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/column_2
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/column2_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/column2_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/column2_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/column2_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/column_relief
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/column_relief_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/column_relief_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/column_relief_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/column_relief_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/crack
+{
+	noshadows
+	twoSided
+	polygonOffset
+	translucent
+	{
+		blend blend
+		map textures/sanctuary/crack_d.tga
+		alpha 24
+	}
+}
+
+sanctuary/door
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/door_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/door_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/door_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/door_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/floor
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/floor_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/floor_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/floor_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/floor_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/fresco
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/fresco_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/fresco_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/fresco_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/fresco_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/relief_griffin_clock
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/relief_griffin_clock_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/relief_griffin_clock_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/relief_griffin_clock_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/relief_griffin_clock_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/relief_griffin_key
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/relief_griffin_key_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/relief_griffin_key_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/relief_griffin_key_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/relief_griffin_key_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/sanctuary_sky
+{
+	noshadows
+	twoSided
+	{
+		blend add
+		map textures/sanctuary/sky_d.tga
+		rgb 1.5
+	}
+}
+
+sanctuary/shadow
+{
+	noshadows
+	{
+		blend bumpmap
+		map textures/sanctuary/_flat_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/_white.tga
+		vertexColor
+	}
+}
+
+sanctuary/st_angel
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/st_angel_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/st_angel_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/st_angel_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/st_angel_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/st_dog
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/st_dog_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/st_dog_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/st_dog_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/st_dog_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/st_girl
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/st_girl_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/st_girl_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/st_girl_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/st_girl_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/st_reader
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/st_reader_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/st_reader_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/st_reader_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/st_reader_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/stone_1
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/stone1_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/stone1_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/stone1_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/stone1_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/stone_2
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/stone2_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/stone2_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/stone2_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/stone2_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/wall_border_1
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/wall_border1_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/wall_border1_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/wall_border1_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/wall_border1_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/wall_border_2
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/wall_border2_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/wall_border2_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/wall_border2_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/wall_border2_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/wall_border_3
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/wall_border3_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/wall_border3_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/wall_border3_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/wall_border3_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/wall_border_4
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/wall_border4_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/wall_border4_d.tga
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/wall_border4_s.tga
+		rgb 1.75
+	}
+	{
+		blend add
+		map textures/sanctuary/wall_border4_d.tga
+		vertexColor
+		rgb 0.25
+	}
+}
+
+sanctuary/wheel_glass
+{
+	noshadows
+	translucent
+	{
+		blend add
+		map textures/sanctuary/wheel_d_glass.tga
+		alphaTest 0.5
+		rgb 0.7
+	}
+}
+
+sanctuary/wheel_wall
+{
+	{
+		blend bumpmap
+		map textures/sanctuary/wheel_n.tga
+	}
+	{
+		blend diffusemap
+		map textures/sanctuary/wheel_d.tga
+		alphaTest 0.5
+	}
+	{
+		blend specularmap
+		map textures/sanctuary/wheel_s.tga
+		rgb 1.75
+	}
+}
+
+sanctuary/windows_glass
+{
+	noshadows
+	translucent
+	{
+		blend add
+		map textures/sanctuary/windows_d.tga
+		rgb 0.65
+	}
+}
+
+textures/sanctuary/fire_flame
+{
+	noshadows
+	translucent
+	twoSided
+	{
+		blend add
+		map textures/sanctuary/fire_flame.tga
+		colored
+		vertexColor
+	}
+}
+
+textures/sanctuary/fire_smoke
+{
+	noshadows
+	translucent
+	twoSided
+	{
+		blend blend
+		map textures/sanctuary/fire_smoke.tga
+		colored
+		vertexColor
+	}
+}
+
+sanctuary/menu
+{
+	noshadows
+	twoSided
+	{
+		blend diffusemap
+		map _white
+	}
+	guisurf entity
+}

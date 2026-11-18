@@ -1,0 +1,4 @@
+entityDef sanctuary_camera {
+	"spawnclass" "idCameraAnim"
+	"editor_color" "0 1 0"
+}
