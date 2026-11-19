@@ -8,7 +8,6 @@ windowDef Desktop
 		set "flame_label" "Flames: on" ;
 		set "candle_label" "Candles: on" ;
 		set "weapon_label" "Weapon: off" ;
-		set "sound_label" "Sound: on" ;
 		set "fireball_label" "Fireballs: off" ;
 		set "tone_label" "Tone: default" ;
 		set "bench_label" "Choose Benchmark or a camera" ;
@@ -28,31 +27,10 @@ windowDef Desktop
 		onAction
 		{
 		set "settings_panel::visible" "0" ;
-		set "stereo_panel::visible" "0" ;
 		set "post_panel::visible" "0" ;
 		set "camera_panel::visible" "0" ;
 		set "info_panel::visible" "0" ;
 		set "settings_panel::visible" "1" ;
-		}
-	}
-	windowDef stereo_b
-	{
-		rect	132,8,118,24
-		backcolor	0.16,0.11,0.07,1
-		bordercolor	0.72,0.55,0.32,0.9
-		bordersize	1
-		forecolor	0.95,0.86,0.68,1
-		text	"Stereo"
-		textscale	0.22
-		textalign	1
-		onAction
-		{
-		set "settings_panel::visible" "0" ;
-		set "stereo_panel::visible" "0" ;
-		set "post_panel::visible" "0" ;
-		set "camera_panel::visible" "0" ;
-		set "info_panel::visible" "0" ;
-		set "stereo_panel::visible" "1" ;
 		}
 	}
 	windowDef post_b
@@ -68,7 +46,6 @@ windowDef Desktop
 		onAction
 		{
 		set "settings_panel::visible" "0" ;
-		set "stereo_panel::visible" "0" ;
 		set "post_panel::visible" "0" ;
 		set "camera_panel::visible" "0" ;
 		set "info_panel::visible" "0" ;
@@ -88,7 +65,6 @@ windowDef Desktop
 		onAction
 		{
 		set "settings_panel::visible" "0" ;
-		set "stereo_panel::visible" "0" ;
 		set "post_panel::visible" "0" ;
 		set "camera_panel::visible" "0" ;
 		set "info_panel::visible" "0" ;
@@ -110,24 +86,9 @@ windowDef Desktop
 		runScript sanctuary_fireballs ;
 		}
 	}
-	windowDef sound_b
-	{
-		rect	8,38,118,24
-		backcolor	0.16,0.11,0.07,1
-		bordercolor	0.72,0.55,0.32,0.9
-		bordersize	1
-		forecolor	0.95,0.86,0.68,1
-		text	"Sound"
-		textscale	0.22
-		textalign	1
-		onAction
-		{
-		runScript sanctuary_sound ;
-		}
-	}
 	windowDef benchmark_b
 	{
-		rect	132,38,118,24
+		rect	132,8,118,24
 		backcolor	0.16,0.11,0.07,1
 		bordercolor	0.72,0.55,0.32,0.9
 		bordersize	1
@@ -138,47 +99,6 @@ windowDef Desktop
 		onAction
 		{
 		runScript sanctuary_benchmark ;
-		}
-	}
-	windowDef editor_b
-	{
-		rect	256,38,118,24
-		backcolor	0.16,0.11,0.07,1
-		bordercolor	0.72,0.55,0.32,0.9
-		bordersize	1
-		forecolor	0.95,0.86,0.68,1
-		text	"Editor"
-		textscale	0.22
-		textalign	1
-		onAction
-		{
-		set "settings_panel::visible" "0" ;
-		set "stereo_panel::visible" "0" ;
-		set "post_panel::visible" "0" ;
-		set "camera_panel::visible" "0" ;
-		set "info_panel::visible" "0" ;
-		set "info_panel::visible" "1" ;
-		}
-	}
-	windowDef quit_b
-	{
-		rect	380,38,118,24
-		backcolor	0.16,0.11,0.07,1
-		bordercolor	0.72,0.55,0.32,0.9
-		bordersize	1
-		forecolor	0.95,0.86,0.68,1
-		text	"Quit"
-		textscale	0.22
-		textalign	1
-		onAction
-		{
-		set "settings_panel::visible" "0" ;
-		set "stereo_panel::visible" "0" ;
-		set "post_panel::visible" "0" ;
-		set "camera_panel::visible" "0" ;
-		set "info_panel::visible" "0" ;
-		set "info_panel::visible" "1" ;
-		runScript sanctuary_quit ;
 		}
 	}
 	windowDef settings_panel
@@ -494,21 +414,6 @@ windowDef Desktop
 			{
 			runScript sanctuary_cam_8 ;
 			}
-		}
-	}
-	windowDef stereo_panel
-	{
-		rect	16,78,608,120
-		backcolor	0.07,0.05,0.04,0.96
-		bordercolor	0.72,0.55,0.32,0.7
-		bordersize	1
-		visible	0
-		windowDef stereo_text
-		{
-			rect	12,16,580,80
-			forecolor	0.95,0.86,0.68,1
-			text	"Stereo, anaglyph and the editor are Unigine-only. This port keeps the benchmark, cameras, lights and sound."
-			textscale	0.24
 		}
 	}
 	windowDef info_panel

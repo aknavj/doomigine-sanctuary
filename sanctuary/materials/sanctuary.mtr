@@ -892,9 +892,6 @@ sanctuary/menu
 {
 	noshadows
 	twoSided
-	{
-		blend diffusemap
-		map _white
-	}
+	polygonOffset 1
 	guisurf entity
 }

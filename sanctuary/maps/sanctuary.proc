@@ -1,16 +1,16 @@
 mapProcFile003
 
 model {
-"_area0"
-0
+    "_area0"
+    0
 }
 
 interAreaPortals {
-1 0
+    1 0
 }
 
 nodes {
-1
-( 0 0 1 0 )
--1 -1
+    1
+    ( 0 0 1 0 )
+    -1 -1
 }

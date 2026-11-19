@@ -1,4 +1,5 @@
 // Sanctuary benchmark controls. The world panel calls these.
+
 float busy;
 float fireballOn;
 float sunOn;
@@ -54,24 +55,54 @@ void apply_candles() {
 }
 
 void sanctuary_sun() {
-	if (sunOn == 1) { sunOn = 0; menu_parm("sun_label", "Sun: off"); }
-	else { sunOn = 1; menu_parm("sun_label", "Sun: on"); }
+	if (sunOn == 1) { 
+		sunOn = 0; 
+		menu_parm("sun_label", "Sun: off"); 
+	}
+	else { 
+		sunOn = 1; 
+		menu_parm("sun_label", "Sun: on"); 
+	}
 	apply_sun();
 }
+
 void sanctuary_flames() {
-	if (flameOn == 1) { flameOn = 0; menu_parm("flame_label", "Flames: off"); }
-	else { flameOn = 1; menu_parm("flame_label", "Flames: on"); }
+	if (flameOn == 1) { 
+		flameOn = 0; 
+		menu_parm("flame_label", "Flames: off"); 
+	}
+	else { 
+		flameOn = 1; 
+		menu_parm("flame_label", "Flames: on"); 
+	}
 	apply_flames();
 }
+
 void sanctuary_candles() {
-	if (candleOn == 1) { candleOn = 0; menu_parm("candle_label", "Candles: off"); }
-	else { candleOn = 1; menu_parm("candle_label", "Candles: on"); }
+	if (candleOn == 1) { 
+		candleOn = 0; 
+		menu_parm("candle_label", "Candles: off"); 
+	}
+	else { 
+		candleOn = 1; 
+		menu_parm("candle_label", "Candles: on"); 
+	}
 	apply_candles();
 }
+
 void sanctuary_weapon() {
-	if (weaponOn == 1) { weaponOn = 0; $light_weapon.hide(); menu_parm("weapon_label", "Weapon: off"); }
-	else { weaponOn = 1; $light_weapon.show(); menu_parm("weapon_label", "Weapon: on"); }
+	if (weaponOn == 1) { 
+		weaponOn = 0; 
+		$light_weapon.hide(); 
+		menu_parm("weapon_label", "Weapon: off"); 
+	}
+	else { 
+		weaponOn = 1; 
+		$light_weapon.show(); 
+		menu_parm("weapon_label", "Weapon: on"); 
+	}
 }
+
 void sanctuary_sound() {
 	if (soundOn == 1) {
 		savedVolume = sys.getcvar("s_volume");
@@ -84,6 +115,7 @@ void sanctuary_sound() {
 		menu_parm("sound_label", "Sound: on");
 	}
 }
+
 void sanctuary_fireballs() {
 	if (fireballOn == 1) {
 		fireballOn = 0;
@@ -103,12 +135,41 @@ void sanctuary_fireballs() {
 	apply_sun();
 	apply_flames();
 }
-void sanctuary_tone_default() { sys.setcvar("r_brightness", "1"); sys.setcvar("r_gamma", "1"); menu_parm("tone_label", "Tone: default"); }
-void sanctuary_tone_bright() { sys.setcvar("r_brightness", "1.35"); sys.setcvar("r_gamma", "1"); menu_parm("tone_label", "Tone: bright"); }
-void sanctuary_tone_dim() { sys.setcvar("r_brightness", "0.7"); sys.setcvar("r_gamma", "1"); menu_parm("tone_label", "Tone: dim"); }
-void sanctuary_tone_warm() { sys.setcvar("r_brightness", "1.1"); sys.setcvar("r_gamma", "1.25"); menu_parm("tone_label", "Tone: warm gamma"); }
-void sanctuary_tone_cool() { sys.setcvar("r_brightness", "1"); sys.setcvar("r_gamma", "0.82"); menu_parm("tone_label", "Tone: cool gamma"); }
-void sanctuary_quit() { menu_parm("bench_label", "Press Escape, then Exit Game"); sys.println("SANCTUARY_QUIT"); }
+
+void sanctuary_tone_default() { 
+	sys.setcvar("r_brightness", "1"); 
+	sys.setcvar("r_gamma", "1"); 
+	menu_parm("tone_label", "Tone: default"); 
+}
+
+void sanctuary_tone_bright() { 
+	sys.setcvar("r_brightness", "1.35"); 
+	sys.setcvar("r_gamma", "1"); 
+	menu_parm("tone_label", "Tone: bright"); 
+}
+
+void sanctuary_tone_dim() { 
+	sys.setcvar("r_brightness", "0.7"); 
+	sys.setcvar("r_gamma", "1"); 
+	menu_parm("tone_label", "Tone: dim"); 
+}
+
+void sanctuary_tone_warm() { 
+	sys.setcvar("r_brightness", "1.1"); 
+	sys.setcvar("r_gamma", "1.25"); 
+	menu_parm("tone_label", "Tone: warm gamma"); 
+}
+
+void sanctuary_tone_cool() { 
+	sys.setcvar("r_brightness", "1"); 
+	sys.setcvar("r_gamma", "0.82"); 
+	menu_parm("tone_label", "Tone: cool gamma"); 
+}
+
+void sanctuary_quit() { 
+	menu_parm("bench_label", "Press Escape, then Exit Game"); 
+	sys.println("SANCTUARY_QUIT"); 
+}
 
 void play_cam(entity cam) {
 	sys.fadeOut('0 0 0', 0.25);
@@ -124,6 +185,7 @@ void bench_counter() {
 		sys.waitFrame();
 	}
 }
+
 void finish_bench(float started) {
 	float elapsed;
 	busy = 0;
@@ -136,9 +198,12 @@ void finish_bench(float started) {
 	menu_parm("bench_label", "Benchmark done");
 	sys.println("SANCTUARY_BENCH_END");
 }
+
 void sanctuary_cam_0() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Camera 0");
 	thread bench_counter();
@@ -146,9 +211,12 @@ void sanctuary_cam_0() {
 	play_cam($cam_0);
 	finish_bench(started);
 }
+
 void sanctuary_cam_1() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Camera 1");
 	thread bench_counter();
@@ -156,9 +224,12 @@ void sanctuary_cam_1() {
 	play_cam($cam_1);
 	finish_bench(started);
 }
+
 void sanctuary_cam_2() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Camera 2");
 	thread bench_counter();
@@ -166,9 +237,12 @@ void sanctuary_cam_2() {
 	play_cam($cam_2);
 	finish_bench(started);
 }
+
 void sanctuary_cam_3() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Camera 3");
 	thread bench_counter();
@@ -176,9 +250,12 @@ void sanctuary_cam_3() {
 	play_cam($cam_3);
 	finish_bench(started);
 }
+
 void sanctuary_cam_4() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Camera 4");
 	thread bench_counter();
@@ -186,9 +263,12 @@ void sanctuary_cam_4() {
 	play_cam($cam_4);
 	finish_bench(started);
 }
+
 void sanctuary_cam_5() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Camera 5");
 	thread bench_counter();
@@ -196,9 +276,12 @@ void sanctuary_cam_5() {
 	play_cam($cam_5);
 	finish_bench(started);
 }
+
 void sanctuary_cam_6() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Camera 6");
 	thread bench_counter();
@@ -206,6 +289,7 @@ void sanctuary_cam_6() {
 	play_cam($cam_6);
 	finish_bench(started);
 }
+
 void sanctuary_cam_7() {
 	float started;
 	if (busy == 1) { return; }
@@ -216,9 +300,12 @@ void sanctuary_cam_7() {
 	play_cam($cam_7);
 	finish_bench(started);
 }
+
 void sanctuary_cam_8() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Camera 8");
 	thread bench_counter();
@@ -226,9 +313,12 @@ void sanctuary_cam_8() {
 	play_cam($cam_8);
 	finish_bench(started);
 }
+
 void sanctuary_benchmark() {
 	float started;
-	if (busy == 1) { return; }
+	if (busy == 1) { 
+		return; 
+	}
 	busy = 1;
 	menu_parm("bench_label", "Benchmark running");
 	sys.println("SANCTUARY_BENCH_START");
